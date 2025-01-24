@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavesh's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 34);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(0, 0, 45);
+        }
+
+        nav1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(0, 0, 45);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(142, 142, 250);
+            font-size: 1.06rem
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .right {
+            margin: -80px -10rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .leftsection {
+            font-size: 35px;
+            margin: 0px 100px;
+        }
+
+        .rightsection {
+            margin: 0px 10rem;
+        }
+
+        .purple {
+            color: rgb(135, 0, 225);
+        }
+
+        #element {
+            color: rgb(135, 0, 225);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .hr {
+            border: white;
+            background: rgb(136, 136, 243);
+            height: 2px;
+            margin: 30px 50px;
+        }
+
+        .hr1 {
+            border: white;
+            background: rgb(136, 136, 243);
+            height: 2px;
+            margin: 30px 70vh;
+        }
+
+        .Abt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            margin: 3rem;
+        }
+
+        .Abtme {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            margin: -35vh 22vh;
+
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            margin: 3rem;
+        }
+
+        .content {
+            margin: 0px;
+            padding: 0px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            scroll-behavior: smooth;
+            justify-content: center;
+
+        }
+
+        .skills-box-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .skills-box {
+            background: rgb(45, 45, 60);
+            width: 25vw;
+            margin: 3rem 2rem;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+
+        .progress-bar {
+            height: .8rem;
+            width: 100%;
+            background: var(--progressBar);
+            border-radius: .25rem;
+            -webkit-box-shadow: inset 2px 2px 5px rgba(48, 48, 48, 0.09), inset -2px -2px 5px rgba(255, 255, 255, .09);
+            box-shadow: inset 2px 2px 5px rgba(68, 64, 64, 0.09), inset -2px -2px 5px rgba(255, 255, 255, .09);
+        }
+
+        .skills-bar {
+            height: 100%;
+            background: rgb(157, 23, 210);
+            border-radius: .25rem;
+            margin: 1rem 0;
+        }
+
+        .aos-animate {
+            margin: 1rem 0;
+        }
+
+        .skills-para {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.8rem 0px;
+        }
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            margin: 67rem 0vh;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            margin: 3rem;
+        }
+
+        .project-box-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .project-box {
+            background: rgb(45, 45, 60);
+            width: 25vw;
+            margin: 3rem 7rem;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+
+        .img-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .project-info {
+            display: flex;
+            justify-content: center;
+        }
+
+        .project-detail {
+            display: flex;
+            justify-content: center;
+        }
+
+        #fourthsection .project-box-wrapper .project-box .project-detail button {
+            cursor: pointer;
+            border: none;
+            outline: 0;
+            border-radius: .3rem;
+            padding: .45rem 1rem;
+            margin-top: .4rem;
+            background: rgb(157, 23, 210);
+            color: #fff;
+            box-shadow: 0 .45rem .8rem var(--bshadow)
+        }
+
+        .Contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            margin: 3rem;
+        }
+
+        .Contact1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        .Contact2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .mail-icon {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 1rem;
+        }
+
+        .Contact3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(252, 252, 252);
+            margin: 0 80vh;
+            border-radius: 20px 1px;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            margin-top: -1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Bhavesh Gupta </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstsection">Home</a></li>
+                    <li><a href="#secondsection">About</a></li>
+                    <li><a href="#thirdsection">Skills</a></li>
+                    <li><a href="#fourthsection">Projects</a></li>
+                    <li><a href="#fifthsection">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">BHAVESH</span>
+                <div> and I am a passoinate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="awk!!!" width="500" height="365">
+            </div>
+        </section>
+        <hr class="hr">
+        <section id="secondsection">
+            <div class="Abt">ABOUT ME</div>
+            <hr class="hr1">
+            <h3 class="Abtme">"I'm not trying to be different. To me, I'm just being myself."<h3>
+                    <br>
+                    <h5 class="Abtme">Hi there, My name is Bhavesh Gupta. I'm a student, whose passion is to create and
+                        launch trendy and intuitive projects.</h5>
+                    <br>
+                    <h5 class="Abtme">I'm tech freak and enthusiast who loves to explore new things. Designing
+                        beautiful User Interfaces has been my hobby since 2022. Scroll down to know more about me.</h5>
+
+        </section>
+        <section id="thirdsection">
+            <div class="skills">SKILLS</div>
+            <hr class="hr1">
+            <div class="content">
+                <div class="skills-box-wrapper">
+                    <div class="skills-box" data-aos="fade-up">
+                        <h3>Concepts</h3>
+                        <div class="skills-para">
+                            <p>Data Structures</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 75%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>Algorithms</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>DBMS</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 60%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>Oops</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skills-box" data-aos="fade-up">
+                        <h3>Programming languages</h3>
+                        <div class="skills-para">
+                            <p>C</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>C++</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 60%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>JAVA</p>
+                            <p>55%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 55%"></div>
+                        </div>
+                    </div>
+                    <div class="skills-box" data-aos="fade-up">
+                        <h3>Web Development</h3>
+                        <div class="skills-para">
+                            <p>HTML</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>CSS</p>
+                            <p>65%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 65%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>JavaScript</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 75%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>MySQL</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skills-box" data-aos="fade-up">
+                        <h3>Tech Stack</h3>
+                        <div class="skills-para">
+                            <p>Express</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 75%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>ReactJS</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>NodeJS</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>MongoDB</p>
+                            <p>60%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skills-box" data-aos="fade-up">
+                        <h3>Other Skills</h3>
+                        <div class="skills-para">
+                            <p>Adobe Photoshop</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 85%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>UI/UX Designing</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 70%"></div>
+                        </div>
+                        <div class="skills-para">
+                            <p>CoralDraw</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="skills-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fourthsection">
+            <div class="projects">PROJECTS</div>
+            <hr class="hr1">
+            <div class="content">
+                <div class="project-box-wrapper">
+                    <div class="project-box">
+                        <div class="img-box">
+                            <img src="real.png" alt="" width="400" height="300">
+                        </div>
+                        <div class="project-info">
+                            <h3>Real Time Tracker</h3>
+                        </div>
+                        <div class="project-detail" data-aos="fade-up">
+                            <button>View project</button>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="img-box">
+                            <img src="khatabook.png" alt="" width="300" height="300">
+                        </div>
+                        <div class="project-info">
+                            <h3>Khatabook</h3>
+                        </div>
+                        <div class="project-detail">
+                            <button>View project</button>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="img-box">
+                            <img src="blinkit.png" alt="" width="300" height="300">
+                        </div>
+                        <div class="project-info">
+                            <h3>Blinkit</h3>
+                        </div>
+                        <div class="project-detail">
+                            <button>View project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fifthsection">
+            <div class="Contact">CONTACT</div>
+            <hr class="hr1">
+            <div class="Contact1">"Alone we can do so little; together we can do so much."</div>
+            <div class="Contact2">― Helen Keller</div>
+            <div class="mail-icon">
+                <img src="email.png" width="50px" height="50px">
+            </div>
+            <br>
+            <div class="Contact3"><a href="mailto::gbhavesh681@gmail.com">gbhavesh681@gmail.com</a></div>
+            <br>
+            <nav1>
+                <div class="Contact4" style="font-size: 2rem;">S T A Y &nbsp C O N N E C T E D</div>
+            </nav1>
+            <nav>
+                <div>
+                    <ul>
+                        <li><a href="https://www.instagram.com/">
+                                <img src="instagram.png" width="40px" height="40px">
+                            </a>
+                        <li><a href="https://in.linkedin.com">
+                                <img src="linkedin.png" width="40px" height="40px">
+                            </a>
+                        <li><a href="https://www.github.com/">
+                                <img src="github.jpeg" width="40px" height="40px">
+                            </a>
+                        <li><a href="https://www.twitter.com/">
+                                <img src="x.jpeg" width="40px" height="40px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav1>
+                <div class="Contact4" style="font-size: 0.9rem;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbspCopyright © 2024 | All Rights Reserved <br> This website is designed and developed by
+                    Bhavesh.</div>
+            </nav1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Graphic Designer . . .', 'Web Designer . . .', 'Video Editor . . .', 'Web Developer . . .'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
